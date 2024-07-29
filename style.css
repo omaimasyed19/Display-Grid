@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+*{
+     margin:0%; 
+      padding :0%;
+      box-sizing :border-box ;
+ }
+body{
+        background: rgb(143, 141, 141); 
+      font-family: Bodoni Moda, serif;
+}
+.container{
+     width:auto;
+     height:200px;
+     background-image: url("https://wallpapers.com/images/high/cool-sports-car-nissan-gtr-night-5byqy4fyk29dtgta.webp");
+     background-size: cover;
+     background-position: bottom;
+     margin-bottom: 5px;
+      background-color :#101053; 
+     background-blend-mode: multiply ;
+     transition:all 2s ease-in-out;
+     padding-top: 20px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container:hover{
+     background-position:center;
+     background-color: #ffffff;
+     box-shadow :00 0 10px white;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     /* background-blend-mode: none ;    */
+     background-position: center;
+}
+h1{
+     text-align: center;
+     font-size: 50px;
+     color: white;
+     -webkit-text-stroke: 1px black;
+}  
+.container :hover h1{
+     color:transparent;
+     -webkit-text-stroke: 1px transparent;
+}
+p{
+     text-align: center;
+     font-weight: 600 ;
+     -webkit-text-stroke: 0.1px rgb(9, 5, 32);
+     color: white;
+}
+.gallery{
+     height: auto;
+     width: auto;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: 200px 200px 200px 200px 200px;
+     gap: 5px;
+}
+.box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: bottom,left;
+     background-color:  rgb(29, 23, 63);
+     background-blend-mode: multiply ;
+     transition:all 2s ease-in-out;
+     justify-content :center ;
+     font-size: 60px;
+     color:transparent;
+     border: 2px solid black;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.box:hover{
+     background-position:right;
+     background-color: #ffffff;
+     box-shadow :00 0 10px white;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     /* background-blend-mode: none ;    */
+     overflow: hidden;
+     border: 1px solid white;
+}
+#box1{
+     grid-area: 1/1/4/1;
+}
+#box2{
+     grid-area:1/2/1/4
+}
+#box3{
+     grid-area: 2/2/4/4
+}
+#box4{
+    grid-area: 2/4/4/5;
+}
+#box5{
+     grid-area:4/4/5/1
+}
+#box6{
+     grid-area: 4/4/6/5;
+}
+#box7{
+     grid-area: 5/2/6/4;
+}
+#box8{
+     grid-area: 6/1/7/4;
+}
